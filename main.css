@@ -70,6 +70,15 @@ body {
     font-weight: 600;
     font-size: 22px;
     width: 34rem;
+    margin: 0;
+}
+
+.call-to-action span {
+    font-style: italic;
+}
+
+.call-to-action:last-child {
+    margin-top: 25px;
 }
 
 .information {
@@ -101,15 +110,24 @@ body {
 
 #flex-columns {
     display: flex;
+    width: 100vw;
+    gap: 4rem;
+    box-sizing: content-box;
+
 }
 
-.columns input{
-    
+.column {
+
 }
+
+.column input {
+    height: 20px;
+}
+
 
 #button-create {
     border: 0;
-    background-color: rgb(115, 168, 109);
+    background-color: rgb(74, 129, 68);
     border-radius: 4px;
     padding: 14px;
     width: 14rem;
@@ -119,8 +137,40 @@ body {
     font-size: 16px;
 }
 
+#button-create:hover {
+    cursor: pointer;    
+}   
+
+
 #a-log-in {
-    color: rgb(115, 168, 109);
+    color: rgb(74, 129, 68);
     text-decoration: none;
 }
 
+input:invalid {
+    border-color: red;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(74, 129, 68) ;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    border-color: rgba(202, 202, 202, 0.2);
+    border-radius: 4px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.label-input {
+    margin: 10px;
+}
