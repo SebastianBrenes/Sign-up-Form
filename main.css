@@ -116,9 +116,7 @@ body {
 
 }
 
-.column {
 
-}
 
 .column input {
     height: 20px;
@@ -151,6 +149,10 @@ input:invalid {
     border-color: red;
 }
 
+input:valid {
+    border-color: rgba(202, 202, 202, 0.2);
+}
+
 input:focus{
     outline: none;
     border-color: rgb(74, 129, 68) ;
@@ -161,7 +163,7 @@ label, input {
 }
 
 input {
-    border-color: rgba(202, 202, 202, 0.2);
+    border: 1px solid rgba(202, 202, 202, 0.2);
     border-radius: 4px;
 }
 
