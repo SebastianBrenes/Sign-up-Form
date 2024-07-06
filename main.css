@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'odin-Font';
+    src: url(Fonts/Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+:root {
+    --width-header-section: 30rem;
+    --height-information: 35vh;
+    --height-accountButton: 35vh;
+    --height-form: calc(100vh - var(--height-information) - var(--height-accountButton));
+    --form-padding-left: 5rem;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+}
+
+
+.header-section {
+    width: var(--width-header-section);
+    height: 100vh;
+    /* height: 97.8vh; */
+    background-color: rgb(48, 92, 43);
+    background-image: url(Images/yosemite-922757_1920.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    width: calc(100vw - var(--width-header-section));
+}
+
+#odin-title {
+    background: rgba(0,0,0,0.3);
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#odin-header {
+    font-family: odin-Font ,sans-serif;
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#img-odin-logo {
+    height: 100px;
+    width: auto;
+}
+
+
+
+.call-to-action {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    width: 34rem;
+}
+
+.information {
+    background-color: #fcfcfc;
+    height: var(--height-information);
+    align-content: center;
+    padding-left: var(--form-padding-left);
+}
+
+.form {
+    height: var(--height-form);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: var(--form-padding-left);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 100;
+    box-shadow: 1px 3px 10px rgba(184, 184, 184, 0.5);
+}
+
+.accountButton {
+    background-color: #fcfcfc;
+    height: var(--height-accountButton);
+    padding-top: 2rem;
+    padding-left: var(--form-padding-left);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+#flex-columns {
+    display: flex;
+}
+
+.columns input{
+    
+}
+
+#button-create {
+    border: 0;
+    background-color: rgb(115, 168, 109);
+    border-radius: 4px;
+    padding: 14px;
+    width: 14rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fcfcfc;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#a-log-in {
+    color: rgb(115, 168, 109);
+    text-decoration: none;
+}
+
